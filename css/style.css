@@ -1,0 +1,265 @@
+/*===========================================================================
+	메인
+============================================================================*/
+.main-wrap {}
+.main-wrap .mainSwiper {height: calc(100vh - 70px);}
+.main-wrap .list-box {position: relative;}
+.main-wrap .list-box .profile-img {position: absolute; top:50%; transform: translateY(-50%);}
+.main-wrap .list-box .txt-box {z-index: 10; position: absolute; top:50%; transform: translateY(-50%); width: 100%;}
+.main-wrap .list-box:nth-child(2n-1) .profile-img {left:48px;}
+.main-wrap .list-box:nth-child(2n-1) .txt-box {right:0;text-align: right;}
+.main-wrap .list-box:nth-child(2n) .profile-img {right:48px;}
+.main-wrap .list-box:nth-child(2n) .txt-box {left:0; text-align: left;}
+.main-wrap .list-box .profile-img .icon-circle-line {position: absolute; left:50%; top: 50%; transform: translate(-50%, -50%); max-width: 400px; width: 100%;}
+.main-wrap .list-box .txt-box .ranking {position: relative; padding: 6px 18px; border: 2px solid #FFDB91; border-radius: 30px; font-weight: bold; letter-spacing: 0; background: linear-gradient(130deg, #E6AE39 5%, #D9960B 50%, #F3C566 100%); margin-bottom: 25px; font-family: 'Montserrat', sans-serif;}
+.main-wrap .list-box .txt-box .ranking img {position: absolute; top:0; left:0;}
+.main-wrap .list-box .txt-box .name {position: relative; font-size: 120px; margin-bottom: 32px; font-family: 'Montserrat', sans-serif; line-height: 1.2; word-break: break-word;}
+.main-wrap .list-box .txt-box .name strong {line-height: 1;}
+.main-wrap .list-box .txt-box .name.orange-txt strong {background: linear-gradient(130deg, #E19400 -50%, #DEA000 5%, #F3D17E 10%, #DEA000 50%, #D2871A 100%); color: transparent; -webkit-background-clip: text;}
+.main-wrap .list-box .txt-box .name.blue-txt strong {background: linear-gradient(130deg, #FF4486 -50%, #FF659B 5%, #FFB5D8 10%, #D45BAC 50%, #3135EC 100%); color: transparent; -webkit-background-clip: text;}
+.main-wrap .list-box .txt-box .name.active {}
+.main-wrap .list-box .txt-box .info {position: relative; justify-content: flex-end;}
+.main-wrap .list-box:nth-child(2n) .txt-box .info {position: relative; justify-content: flex-start;}
+.main-wrap .list-box .txt-box .info .icon-wave {position: absolute; top: -30px; left: 0;}
+.main-wrap .list-box .txt-box .info .icon-music {margin:-2px 8px 0 0;}
+.main-wrap .list-box .txt-box .info p {font-size: 16px; font-family: 'Montserrat', sans-serif;}
+.main-wrap .list-box .txt-box .info p strong {}
+.main-wrap .swiper-pagination {top:80px; left:inherit; right:0; width: auto; display: flex; flex-direction: column; color:#000;}
+.main-wrap .swiper-pagination span {color:#808080; font-size: 14px; font-family: 'Montserrat', sans-serif;}
+.main-wrap .swiper-pagination span:nth-child(2) {position: absolute; top:26px; left:3px;}
+.main-wrap .swiper-pagination .swiper-pagination-current {color:#FFDB91;}
+
+
+/* 서브 공통 */
+.sub-wrap h2 {margin: 24px 0 48px; font-size: 36px;}
+.side-container {padding-left: 48px; padding-right: 48px;}
+/*===========================================================================
+	ABOUT US
+============================================================================*/
+.about-wrap {overflow: hidden;}
+.about-wrap .download-box {text-align: center; margin-bottom: 24px;}
+.about-wrap .sec {flex-wrap: wrap;}
+.about-wrap .sec > div {width: 50%;}
+.about-wrap .sec .right img:nth-child(2) {margin: 0 30px;}
+.about-wrap .sec .logo {width: 120px; margin-bottom: 32px;}
+.about-wrap .sec h3 {font-size: 32px;}
+.about-wrap .sec h3 strong {color:#ff4486; margin-bottom: 16px;}
+.about-wrap .sec p {font-size: 16px; color:#ccc; margin-bottom: 80px;}
+.about-wrap .sec .btn-group a {padding: 12px 32px; font-size: 24px; border-radius: 12px; background:#191919; margin-right: 16px;}
+.about-wrap .sec .btn-group a img {width: 20px; margin-right: 12px;}
+.about-wrap .line-banner {height: 460px; background: linear-gradient(to right, #FF4587, #A23EB5, #3135EC);}
+.about-wrap .line-banner .container {display: flex; flex-direction: column; justify-content: center;}
+.about-wrap .line-banner p {font-size: 24px; margin-bottom: 12px;}
+.about-wrap .line-banner h3 {font-size: 48px; margin-bottom: 48px;}
+.about-wrap .line-banner .btn-group a {padding: 12px 32px; font-size: 24px; border-radius: 12px; margin-right: 16px; background: rgba(255,255,255,0.1);}
+.about-wrap .line-banner .btn-group a img {width: 20px; margin-right: 12px;}
+.about-wrap .line-banner .logo {margin: 48px 0 0 auto;}
+
+/*===========================================================================
+	Application - recruit
+============================================================================*/
+.recruit-wrap .cont-group { padding: 48px; border-radius: 16px; background: linear-gradient(115deg, #51E7E7 -10%, #5C47DC 30%, #5026CC 80%, #6103CC 100%);}
+.recruit-wrap .cont-group .info-txt {padding: 16px 24px; margin-bottom: 48px; border-radius: 12px; background:rgba(255, 255, 255, 0.1);}
+.recruit-wrap .cont-group .info-box {justify-content: space-between; margin-bottom: 48px;}
+.recruit-wrap .cont-group .info-box .txt-box {width: calc(50% - 24px);}
+.recruit-wrap .cont-group .info-box .txt-box p {margin-bottom: 8px; color:#bbd3f3;}
+.recruit-wrap .cont-group .info-box .txt-box h3 {font-size: 28px;}
+.recruit-wrap .cont-group .recruit-box {justify-content: space-between; margin-top: 96px;}
+.recruit-wrap .cont-group .recruit-box p {color:#bbd3f3; font-family: 'Montserrat', sans-serif;}
+.recruit-wrap .cont-group .recruit-box p strong {color:#fff; font-weight: bold;}
+.recruit-wrap .cont-group .recruit-box button {justify-content: center; padding: 20px 50px; color:#5533D2; font-weight: bold; background:#fff; line-height: 1; border-radius: 8px;}
+
+
+/*===========================================================================
+	openverse beat
+============================================================================*/
+.controller-bar, .now-controller-bar {cursor: pointer;}
+.openverse-wrap .tab-group {margin-bottom: 80px;}
+.openverse-wrap .tab-group li {padding: 12px 20px; margin:0 12px 0 0; background: #191919; border-radius: 40px; color:#fff; font-size: 14px;}
+.openverse-wrap .tab-group li.active {background: #8900F5;}
+.openverse-wrap .list-head {border-bottom: 1px solid #191919; margin-bottom: 16px;}
+.openverse-wrap .list-head li {width: calc(100% / 6); padding: 16px 0 32px; font-size: 13px; color:#808080; text-align: center;}
+.openverse-wrap .list-body {height: auto; background:inherit; padding: 0; overflow-y:initial; border-radius: 0;}
+.openverse-wrap .list-body li {margin-bottom: 24px;}
+.openverse-wrap .list-body li:last-child {margin-bottom: 0;}
+.openverse-wrap .list-body li > p {width: calc(100% / 6); text-align: center; font-size: 14px;}
+.openverse-wrap .list-body li .album-img img {width: 100px; margin: 0 auto;}
+.controller-wrap {display: none; position:fixed; bottom:16px; left:16px; width: calc(100% - 32px); height: 265px; padding: 32px 0; border-radius: 16px; background: linear-gradient(140deg, #3135EC, #FF4486);}
+.controller-wrap.show {display: block !important;}
+.controller-wrap .controller-head {display: flex; justify-content: flex-end; margin-bottom: 16px;}
+.controller-wrap .controller-head img {cursor: pointer;}
+.controller-wrap .controller-body {justify-content: space-between;}
+.controller-wrap .controller-body .album-info {width: 30%;}
+.controller-wrap .controller-body .album-info .album-img {width: 78px; margin-right: 16px;}
+.controller-wrap .controller-body .album-info .info h4 a { font-weight: 600; font-family: 'Montserrat', sans-serif;}
+.controller-wrap .controller-body .album-info .info p a {font-weight: 300; color:#DBDDE1; font-family: 'Montserrat', sans-serif;}
+.controller-wrap .controller-body .album-info .info p a:hover {text-decoration: underline;}
+.controller-wrap .controller-body .controller-group {width: 40%; margin: 0 auto;}
+.controller-wrap .controller-body .controller-group .controller-box {justify-content: space-between; width: 280px; margin: 0 auto 24px;}
+.controller-wrap .controller-body .controller-group .controller-box button {}
+.controller-wrap .controller-body .controller-group .controller-bar {position: relative; width: 100%; height: 7px; background: rgba(255, 255, 255, 0.2); border-radius: 20px;}
+.controller-wrap .controller-body .controller-group .now-controller-bar {position: absolute; top:0; left:0; width: 80%; height: 7px; background:#fff; border-radius: 20px;}
+.controller-wrap .controller-body .controller-group .time-box {position: relative; justify-content: space-between; margin-top: 10px;}
+.controller-wrap .controller-body .controller-group span {font-size: 14px; color:#DBDDE1;}
+.controller-wrap .controller-body .sound-controller {width: 30%; justify-content: flex-end;}
+.controller-wrap .controller-body .sound-controller img {cursor: pointer;}
+.controller-wrap .controller-body .sound-controller .controller-bar {position: relative; width: 100px; height: 7px; margin-left: 10px; background: rgba(255, 255, 255, 0.2); border-radius: 20px;}
+.controller-wrap .controller-body .sound-controller .now-controller-bar {position: absolute; top:0; left:0; width: 80%; height: 7px; background:#fff; border-radius: 20px;}
+
+
+/*===========================================================================
+	error
+============================================================================*/
+.error-wrap .error-cont {margin: 80px 0; text-align: center;}
+.error-wrap .error-cont p {font-size: 20px;}
+.error-wrap .error-cont span {display: block; font-size: 14px; margin: 16px 0 80px; color:#808080;}
+.error-wrap .error-cont a {display: inline-block; width: auto; background: linear-gradient(115deg, #3135EC, #FF4486); padding: 12px 24px; margin: 0 auto; font-size: 14px; border-radius: 34px;}
+
+
+/*===========================================================================
+	find password
+============================================================================*/
+.find-password-wrap h2 {justify-content: space-between;}
+.find-password-wrap form {width: 480px; margin-bottom: 80px;}
+.find-password-wrap form h3 {margin-bottom: 16px;}
+.find-password-wrap form input {display: block; width: 100%; height: 50px; margin-bottom: 16px; color:#fff;}
+.find-password-wrap form button {display: block; height: 45px; padding: 12px 24px; border-radius: 8px; font-size: 13px; margin-left: auto; background: linear-gradient(115deg, #3135EC 0%, #FF4486 100%);}
+.find-password-wrap form button:disabled {background:none; font-size: 0; cursor: none;}
+.find-password-wrap .alert-box h4 {font-size: 14px; margin-bottom: 12px; font-family: 'Montserrat', sans-serif;}
+.find-password-wrap .alert-box p {position: relative; margin-bottom: 12px; padding-left: 16px; color:#818898; font-family: 'Montserrat', sans-serif;}
+.find-password-wrap .alert-box p::before {content:''; position: absolute; top:50%; left:4px; transform: translateY(-50%); width: 4px; height: 4px; border-radius: 50%; background:#818898;}
+
+
+
+/*===========================================================================
+	반응형
+============================================================================*/
+/* tablet */
+@media(max-width:1200px) {
+    /* 메인페이지 */
+    .main-wrap .list-box .txt-box {max-width: 560px;}
+    .main-wrap .list-box .txt-box .ranking {font-size: 12px;}
+    .main-wrap .list-box .txt-box .name {font-size: 80px;}
+    .main-wrap .list-box .txt-box .info .icon-wave {display: none;}
+
+    /* about-us */
+    .about-wrap h2 {font-size: 32px;}
+    .about-wrap .sec > div {width: 100%;}
+    .about-wrap .sec h3 {font-size: 28px;}
+    .about-wrap .sec .left {margin-bottom: 80px;}
+    .about-wrap .sec .right img {width: 100%;}
+    .about-wrap .line-banner {padding: 48px 0; height: auto;}
+    .about-wrap .line-banner p {font-size: 16px;}
+    .about-wrap .line-banner h3 {font-size: 36px;}
+
+    /* Application - recruit */
+    .recruit-wrap .cont-group .info-txt {font-size: 14px;}
+    .recruit-wrap .cont-group .info-box .txt-box h3 {font-size: 20px;}
+    .recruit-wrap .cont-group .info-box .txt-box p:nth-child(3) {font-size: 14px;}
+
+    /* Openverse */
+    .openverse-wrap .tab-group {margin-bottom: 20px;}
+    .openverse-wrap .tab-group li {margin-bottom: 12px;}
+    .controller-wrap {padding: 16px 0;}
+    .controller-wrap .top {justify-content: space-between; margin-bottom: 32px;}
+    .controller-wrap .top .album-info {width: calc(100% - 180px);}
+    .controller-wrap .controller-body .album-info .info h4 a {margin-right: 8px;}
+    .controller-wrap .top .album-info .album-img {width: 48px;}
+    .controller-wrap .controller-body .controller-group {width: 480px;}
+    
+}
+
+@media (max-width:1000px) {
+
+}
+
+/* mobile */
+@media(max-width:768px) {
+    /* 메인메뉴 */
+    .main-wrap .list-box .txt-box { display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: calc(100% - 70px);}
+    .main-wrap .list-box:nth-child(2n) .txt-box {left: 50%; right: inherit; transform: translate(-50%, -50%);}
+    .main-wrap .list-box:nth-child(2n - 1) .txt-box { left:50%; transform: translate(-50%, -50%);}
+    .main-wrap .list-box .profile-img {width: 100%; transform: translate(-50%, -50%); text-align: center;}
+    .main-wrap .list-box .profile-img .main-img {max-width: 360px; width: calc(100% - 40px);}
+    .main-wrap .list-box .profile-img:nth-child(2n) {left: 50%;}
+    .main-wrap .list-box .profile-img:nth-child(2n - 1) {left: 50%; right: 0;}
+    .main-wrap .list-box .txt-box .ranking {margin-bottom: 0;}
+    .main-wrap .list-box .txt-box .name {font-size: 56px; text-align: center;}
+    .main-wrap .swiper-pagination {display: none;}
+
+
+    .side-container {padding-left: 24px; padding-right: 24px;}
+    /* about-us */
+    .about-wrap .sec h3 {font-size: 20px;}
+    .about-wrap .sec p {font-size: 14px; margin-bottom: 32px;}
+    .about-wrap .sec .btn-group a {font-size: 16px; padding: 12px 20px;}
+    .about-wrap .line-banner {padding: 24px 0;}
+    .about-wrap .line-banner h3 {font-size: 24px; margin-bottom: 24px;}
+    .about-wrap .line-banner .btn-group a {font-size: 16px; padding: 12px 20px;}
+
+    /* Application - recruit */
+    .recruit-wrap h2 {margin-bottom: 24px;}
+    .recruit-wrap .cont-group {padding: 0; border-radius: 0; background:none}
+    .recruit-wrap .cont-group .info-txt {font-size: 13px; padding: 16px; margin-bottom: 36px;}
+    .recruit-wrap .cont-group .info-box {flex-wrap: wrap; margin-bottom: 0;}
+    .recruit-wrap .cont-group .info-box .txt-box {width: 100%; margin-bottom: 24px;}
+    .recruit-wrap .cont-group .info-box .txt-box p {font-size: 14px; color:#808080;}
+    .recruit-wrap .cont-group .info-box .txt-box h3 {font-size: 16px;}
+    .recruit-wrap .cont-group .info-box .txt-box p:nth-child(3) {font-size: 13px; margin-top: 4px;}
+    .recruit-wrap .cont-group .recruit-box {flex-wrap: wrap; text-align: center;}
+    .recruit-wrap .cont-group .recruit-box p {font-size: 13px; color:#fff;}
+    .recruit-wrap .cont-group .recruit-box p strong {font-weight: inherit;}
+    .recruit-wrap .cont-group .recruit-box button {width: 100%; margin: 16px auto 0;  background: linear-gradient(130deg, #51E7E7 -30%, #5C47DC 30%, #5026CC 80%, #6103CC 100%); color:#fff;}
+
+    /* opeanverse beat */
+    .sub-wrap h2 {font-size: 24px; margin: 24px 0;}
+    .openverse-wrap .tab-group li {font-size: 12px; padding: 8px 12px; margin: 0 4px 8px 0;}
+    .openverse-wrap .list-head {display: none;}
+    .openverse-wrap .list-body li > p {display: none;}
+    .openverse-wrap .list-body li .album-img img {width: 48px; margin-right: 8px;}
+    .openverse-wrap .list-body li .mobile {width: 100%;}
+    .openverse-wrap .list-body li .list-box {justify-content: space-between;}
+    .openverse-wrap .list-body li .list-box .info-box {width: calc(100% - 180px);}
+    .openverse-wrap .list-body li .list-box p {font-size: 12px;}
+    .openverse-wrap .list-body li .list-box .info-box p.active{color:#8900F5}
+    .openverse-wrap .list-body li .list-box .info-box .artist {color:#c9c9c9;}
+    .controller-wrap.show {display: none !important;}
+}
+
+@media (max-width:520px) {
+    .find-password-wrap h2 {flex-wrap: wrap;}
+    .find-password-wrap form {width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
